@@ -32,8 +32,8 @@ jobs:
       - name: Build with Next.js
         run: npx next build
 
-      - name: List all files/directory
-        run: ls -al
+      - name: Cat next.config.mjs
+        run: cat next.config.mjs
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
